@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "SF Pro", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    letter-spacing: -0.015em;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    overflow-x: hidden;
+  }
+}
+
+/* Apple Broken White Glassmorphism Surfaces */
+.apple-glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.03);
+}
+
+.apple-glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+}
+
+.apple-glass-card:hover {
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.08);
+}
+
+.apple-glass-subtle {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.apple-glass-nav {
+  background: rgba(245, 245, 247, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+/* Apple Crisp Typography & Gradients */
+.text-apple-headline {
+  color: #1d1d1f;
+  letter-spacing: -0.025em;
+}
+
+.text-apple-subheadline {
+  color: #6e6e73;
+  letter-spacing: -0.01em;
+}
+
+.text-apple-gradient {
+  background: linear-gradient(180deg, #1d1d1f 0%, #434347 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-apple-blue {
+  color: #0071e3;
+}
+
+/* Ambient Broken White Lighting */
+.ambient-glow-soft {
+  background: radial-gradient(circle, rgba(0, 113, 227, 0.08) 0%, rgba(245, 245, 247, 0) 70%);
+}
+
+.ambient-glow-warm {
+  background: radial-gradient(circle, rgba(235, 230, 220, 0.6) 0%, rgba(245, 245, 247, 0) 70%);
+}
+
+/* Apple Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d2d2d7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a6;
+}
